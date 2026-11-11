@@ -9,8 +9,9 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-import { FloatingWhatsApp } from '@carlos8a/react-whatsapp-floating-button'
+
 import { FiArrowDown, FiArrowUp } from 'react-icons/fi'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 export default function Home() {
   const [isDark, setIsDark] = useState(false)
@@ -127,9 +128,7 @@ export default function Home() {
       {/* WHATSAPP (BOTTOM LEFT) */}
       {!hideFloating && (
         <FloatingWhatsApp
-          phoneNumber="2349066406618"
-          accountName="Kdam Tech"
-          initialMessageByClient="Hi! I found your portfolio and would like to connect."
+          
           darkMode={isDark}
           styles={{
             position: 'fixed',
